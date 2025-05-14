@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-text {
+  max-width: 500px;
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-text .highlight {
+  color: #4a6cf7;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-color: #4a6cf7;
+  clip-path: path('M160 0 C240 0 320 80 320 160 C320 240 240 320 160 320 C80 320 0 240 0 160 C0 80 80 0 160 0 Z');
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%; /* fallback for unsupported clip-path */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image-container img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: top center;
+}
